@@ -1,0 +1,54 @@
+/* Global reset */
+* {
+  box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body style */
+body {
+  background: #f5f7fa; color: #333; padding: 40px 20px; display: flex; flex-direction: column; align-items: center;
+}
+
+/* Section headings */
+h2 {
+  font-size: 20px; font-weight: 600; color: #111; margin-bottom: 20px; letter-spacing: 0.5px;
+}
+
+/* Table container */
+table {
+  width: 90%; max-width: 900px; border-collapse: collapse; margin-bottom: 50px; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+/* Table headers */
+th {
+  padding: 12px 15px; font-size: 14px; text-align: center; background: #089103; color: #fff; font-weight: 600; text-transform: uppercase;
+}
+
+/* Table cells */
+td {
+  padding: 12px 15px; font-size: 14px; text-align: center; color: #444; border-bottom: 1px solid #eee;
+}
+
+/* Alternate row color */
+tr:nth-child(even) td {
+  background: #f9f9f9;
+}
+
+/* Hover effect */
+tr:hover td {
+  background: #e3f2fd; transition: background 0.2s ease;
+}
+
+/* Rounded corners for table header */
+table tr:first-child th:first-child {
+  border-top-left-radius: 8px;
+}
+table tr:first-child th:last-child {
+  border-top-right-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  th {padding: 10px 8px; font-size: 13px;}
+  td {padding: 10px 8px; font-size: 13px;}
+  table {width: 100%;}
+}
